@@ -1,0 +1,21 @@
+:root { --bg:#0b0d10; --card:#11151b; --muted:#a0a8b7; --fg:#e8edf2; --accent:#7aa2f7; }
+*{box-sizing:border-box} html,body{height:100%}
+body{
+  margin:0; background:radial-gradient(800px 400px at 70% -10%, #18233a 0%, #0b0d10 60%, #0b0d10 100%);
+  color:var(--fg); font:16px/1.55 ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,"PingFang SC","Helvetica Neue",Arial,"Noto Sans","Microsoft YaHei",sans-serif;
+  display:grid; place-items:center;
+}
+.app{ width:min(980px,94vw); display:grid; grid-template-columns:360px 1fr; gap:16px; }
+@media (max-width: 880px){ .app{ grid-template-columns: 1fr; } }
+.card{ background: color-mix(in oklab, var(--card), #fff 1.5%); border:1px solid #1d2430; border-radius:16px; overflow:hidden; }
+.stage{ display:grid; place-items:center; padding:14px; }
+canvas{ image-rendering:pixelated; image-rendering:crisp-edges; width:320px; height:320px; }
+/* Chat panel fixed height; messages scroll */
+.chat{ display:grid; grid-template-rows: auto 1fr auto; height: 460px; }
+.messages{ padding:14px; overflow:auto; display:grid; gap:10px; }
+.msg{ max-width:86%; padding:10px 12px; border-radius:12px; background:#0f1723; border:1px solid #1b2536; white-space:pre-wrap; }
+.msg.user{ margin-left:auto; background:#152234; border-color:#23334a; }
+.composer{ display:grid; grid-template-columns:1fr auto; gap:10px; padding:12px; border-top:1px solid #1a2230; }
+textarea{ background:#0f141b; color:var(--fg); border:1px solid #223044; border-radius:12px; padding:10px 12px; min-height:60px; resize:vertical; outline:none; }
+button{ background:linear-gradient(180deg,var(--accent),#6e8ef6); color:#06122c; border:0; padding:0 18px; border-radius:12px; font-weight:700; cursor:pointer; min-width:96px; }
+.title{ padding:10px 14px; font-size:13px; color:var(--muted); border-bottom:1px solid #1a2230;}

@@ -1,20 +1,20 @@
 // === config.js ===
-export const BLINK_ATLAS_JSON = "blinking.json";
-export const BLINK_IMAGE = "blinking.png";
-export const SPEAK_ATLAS_JSON = "speaking.json";
-export const SPEAK_IMAGE = "speaking.png";
+export const BLINK_ATLAS_JSON = "assets/sprites/blinking.json";
+export const BLINK_IMAGE = "assets/sprites/blinking.png";
+export const SPEAK_ATLAS_JSON = "assets/sprites/speaking.json";
+export const SPEAK_IMAGE = "assets/sprites/speaking.png";
 
 export const EXPRESSIONS = {
-  angry: "angry.png",
-  comfort: "comfort.png",
-  curious: "curious.png",
-  flirting: "flirting.png",
-  lookingLeft: "lookingLeft.png",
-  worried: "worried.png",
-  contempt: "contempt.png",
-  happy: "happy.png",
-  encourage: "encourage.png",
-  shock: "shock.png"
+  angry: "assets/expressions/angry.png",
+  comfort: "assets/expressions/comfort.png",
+  curious: "assets/expressions/curious.png",
+  flirting: "assets/expressions/flirting.png",
+  lookingLeft: "assets/expressions/lookingLeft.png",
+  worried: "assets/expressions/worried.png",
+  contempt: "assets/expressions/contempt.png",
+  happy: "assets/expressions/happy.png",
+  encourage: "assets/expressions/encourage.png",
+  shock: "assets/expressions/shock.png"
 };
 
 export const OLLAMA_URL = "http://localhost:11434/api/chat";

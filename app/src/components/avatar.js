@@ -1,5 +1,5 @@
 // === avatar.js ===
-import { BLINK_ATLAS_JSON, BLINK_IMAGE, SPEAK_ATLAS_JSON, SPEAK_IMAGE, EXPRESSIONS } from './config.js';
+import { BLINK_ATLAS_JSON, BLINK_IMAGE, SPEAK_ATLAS_JSON, SPEAK_IMAGE, EXPRESSIONS } from '../config/config.js';
 
 async function loadAtlas(jsonUrl, imageUrl){
   const atlas = await fetch(jsonUrl).then(r=>r.json());

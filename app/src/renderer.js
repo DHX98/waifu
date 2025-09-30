@@ -1,7 +1,7 @@
-// app/renderer.js
-import { Avatar } from './avatar.js';
-import { ChatUI } from './chat.js';
-import { EXP_DURATION_MS } from './config.js';
+// app/src/renderer.js
+import { Avatar } from './components/avatar.js';
+import { ChatUI } from './components/chat.js';
+import { EXP_DURATION_MS } from './config/config.js';
 
 // 小工具：抓 DOM 没找到就抛错，方便排查
 function $id(id) {

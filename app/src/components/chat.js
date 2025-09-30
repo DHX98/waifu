@@ -1,5 +1,5 @@
 // === chat.js ===
-import { OLLAMA_URL, OLLAMA_MODEL, SYSTEM_PROMPT } from './config.js';
+import { OLLAMA_URL, OLLAMA_MODEL, SYSTEM_PROMPT } from '../config/config.js';
 
 export class ChatUI {
   constructor({ messagesEl, inputEl, sendBtn, onTyping, onExpression }){
